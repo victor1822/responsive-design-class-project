@@ -42,6 +42,16 @@ body {
   align-items: center;
 }
 
+/* Animation example */
+@keyframes fadeIn {
+  from { 
+    transform: translateY(-1000px) scale(0.01) rotateZ(-180deg) rotateX(-180deg);
+  }
+  to {
+    transform: translateY(0px) scale(1) rotateZ(0deg) rotateX(0deg);
+  }
+}
+
 body .card {
   display: flex;
   flex-direction: column; 
@@ -54,6 +64,9 @@ body .card {
   padding: 50px 30px 20px;
   width: 75vw;
   max-width: 650px;
+
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
 
 body .card img {
